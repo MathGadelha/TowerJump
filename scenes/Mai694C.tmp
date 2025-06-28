@@ -1,0 +1,61 @@
+[gd_scene load_steps=4 format=3 uid="uid://bfu0yrdm2g5rn"]
+
+[ext_resource type="PackedScene" uid="uid://cc0ktflb7apif" path="res://scenes/platform.tscn" id="1_q4aaf"]
+[ext_resource type="Script" path="res://scripts/main.gd" id="1_wjvx8"]
+[ext_resource type="PackedScene" uid="uid://0uvt765rsbyn" path="res://scenes/player.tscn" id="2_gpf06"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_wjvx8")
+
+[node name="Platform" parent="." instance=ExtResource("1_q4aaf")]
+position = Vector2(-290, 554)
+
+[node name="Player" parent="." instance=ExtResource("2_gpf06")]
+position = Vector2(174, 350)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="LabelAndar" type="Label" parent="CanvasLayer"]
+offset_left = 1092.0
+offset_top = 15.0
+offset_right = 1132.0
+offset_bottom = 38.0
+
+[node name="LabelMoedas" type="Label" parent="CanvasLayer"]
+offset_left = 23.0
+offset_top = 19.0
+offset_right = 63.0
+offset_bottom = 42.0
+
+[node name="LabelMonstro" type="Label" parent="CanvasLayer"]
+offset_left = 890.0
+offset_top = 180.0
+offset_right = 930.0
+offset_bottom = 203.0
+
+[node name="LojaContainer" type="HBoxContainer" parent="CanvasLayer"]
+visible = false
+layout_direction = 2
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -138.0
+offset_top = 41.0
+offset_right = 138.0
+offset_bottom = 100.0
+grow_horizontal = 2
+alignment = 1
+
+[node name="ButtonComprarVelocidade" type="Button" parent="CanvasLayer/LojaContainer"]
+layout_mode = 2
+text = "+Vel. Ataque
+10 Moedas"
+
+[node name="ButtonComprarDano" type="Button" parent="CanvasLayer/LojaContainer"]
+layout_mode = 2
+text = "+1 Dano
+10 Moedas"
+
+[node name="ButtonAvancar" type="Button" parent="CanvasLayer/LojaContainer"]
+layout_mode = 2
+text = "Avançar"

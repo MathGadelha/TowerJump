@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://b4h430g7pr74o"]
+
+[ext_resource type="Script" path="res://scripts/floating_damage.gd" id="1_27b8t"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_npw2t"]
+font_size = 24
+
+[node name="FloatingDamage" type="Node2D"]
+script = ExtResource("1_27b8t")
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "99"
+label_settings = SubResource("LabelSettings_npw2t")
+horizontal_alignment = 1

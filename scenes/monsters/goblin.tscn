@@ -219,7 +219,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7t4my"]
-size = Vector2(97, 118)
+size = Vector2(66, 76)
 
 [sub_resource type="Curve" id="Curve_8iiwg"]
 _data = [Vector2(0.184211, 0.659341), 0.0, 0.0, 0, 0, Vector2(0.542105, 0.296703), 0.0, 0.0, 0, 0, Vector2(0.973684, 0), 0.0, 0.0, 0, 0]
@@ -237,27 +237,27 @@ max_hp = 5
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(-1.49999, -0.500011)
-scale = Vector2(8, 8)
+scale = Vector2(5, 5)
 sprite_frames = SubResource("SpriteFrames_6tsef")
 animation = &"idle"
 flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-4.5, -3)
+position = Vector2(-4, -3)
 shape = SubResource("RectangleShape2D_7t4my")
 
 [node name="HealthBar" type="TextureProgressBar" parent="."]
-offset_left = -105.0
-offset_top = -166.0
-offset_right = 95.0
-offset_bottom = -66.0
+offset_left = -104.0
+offset_top = -142.0
+offset_right = 96.0
+offset_bottom = -54.0
 texture_progress = ExtResource("7_jm823")
 
 [node name="LabelNomeMonstro" type="Label" parent="."]
-offset_left = -30.0
-offset_top = -103.0
-offset_right = 10.0
-offset_bottom = -80.0
+offset_left = -24.0
+offset_top = -69.0
+offset_right = 16.0
+offset_bottom = -46.0
 
 [node name="ImpactParticles" type="CPUParticles2D" parent="."]
 emitting = false

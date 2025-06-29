@@ -9,8 +9,8 @@
 script = ExtResource("1_wjvx8")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(575, 285.5)
-scale = Vector2(3.59375, 3.17222)
+position = Vector2(720.5, 192.5)
+scale = Vector2(4.50313, 4.20555)
 texture = ExtResource("2_lr7oj")
 
 [node name="Platform" parent="." instance=ExtResource("1_q4aaf")]
@@ -22,34 +22,37 @@ position = Vector2(174, 350)
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="LabelMonstro" type="Label" parent="CanvasLayer"]
-offset_left = 891.0
-offset_top = 68.0
-offset_right = 931.0
-offset_bottom = 91.0
+offset_left = 297.0
+offset_top = 154.0
+offset_right = 337.0
+offset_bottom = 177.0
 
 [node name="LabelAndar" type="Label" parent="CanvasLayer"]
-offset_left = 1057.0
-offset_top = 25.0
-offset_right = 1097.0
-offset_bottom = 48.0
+offset_left = 397.0
+offset_top = 55.0
+offset_right = 437.0
+offset_bottom = 78.0
 
 [node name="LabelMoedas" type="Label" parent="CanvasLayer"]
-offset_left = 23.0
-offset_top = 19.0
-offset_right = 63.0
-offset_bottom = 42.0
+offset_left = 16.0
+offset_top = 49.0
+offset_right = 56.0
+offset_bottom = 72.0
 
 [node name="LojaContainer" type="HBoxContainer" parent="CanvasLayer"]
-visible = false
 layout_direction = 2
-anchors_preset = 5
+anchors_preset = 7
 anchor_left = 0.5
+anchor_top = 1.0
 anchor_right = 0.5
-offset_left = -138.0
-offset_top = 41.0
-offset_right = 138.0
-offset_bottom = 100.0
+anchor_bottom = 1.0
+offset_left = -186.0
+offset_top = -150.0
+offset_right = 186.0
+offset_bottom = -96.0
 grow_horizontal = 2
+grow_vertical = 0
+size_flags_stretch_ratio = 0.0
 alignment = 1
 
 [node name="ButtonComprarVelocidade" type="Button" parent="CanvasLayer/LojaContainer"]

@@ -196,16 +196,16 @@ size = Vector2(14, 19)
 script = ExtResource("1_uo4cq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-scale = Vector2(5, 5)
+scale = Vector2(3, 3)
 sprite_frames = SubResource("SpriteFrames_kr65n")
 animation = &"idle"
 metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(4, -11.5)
-scale = Vector2(5, 5)
+scale = Vector2(3, 3)
 shape = SubResource("RectangleShape2D_6grf4")
 metadata/_edit_group_ = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(400, -100)
+position = Vector2(140, -138)
